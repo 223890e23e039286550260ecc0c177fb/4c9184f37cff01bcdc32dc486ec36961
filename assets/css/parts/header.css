@@ -1,0 +1,322 @@
+header {
+  height: 65px;
+  left: 0;
+  position: fixed;
+  top: -65px;
+  width: 100%;
+  z-index: 10;
+  -webkit-transition: top 0.45s 0.6s ease-out;
+  -moz-transition: top 0.45s 0.6s ease-out;
+  -o-transition: top 0.45s 0.6s ease-out;
+  transition: top 0.45s 0.6s ease-out;
+}
+header.active {
+  top: 0;
+}
+header.active .contentWrapper .innerWrapper .socialsWrapper {
+  right: 0;
+}
+header.open .contentWrapper .innerWrapper .button {
+  background: #fff;
+  color: #000;
+}
+header.open .contentWrapper .innerWrapper .button:hover {
+  background: #94753b;
+}
+header.open .contentWrapper .innerWrapper #hamburger {
+  background: #000;
+}
+header.open .contentWrapper .innerWrapper #hamburger .bars .bar:first-child {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: 8px;
+}
+header.open .contentWrapper .innerWrapper #hamburger .bars .bar:nth-child(2) {
+  width: 0;
+}
+header.open .contentWrapper .innerWrapper #hamburger .bars .bar:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  bottom: 8px;
+}
+header.open .contentWrapper .innerWrapper .socialsWrapper .innerSocialsWrapper .links a {
+  color: #000;
+}
+header.open .contentWrapper .innerWrapper .socialsWrapper .innerSocialsWrapper .links a:hover {
+  color: #fff;
+}
+header.open .contentWrapper .innerWrapper .bigMenu {
+  top: 65px;
+}
+header .contentWrapper {
+  padding: 0;
+  text-align: right;
+  position: relative;
+}
+header .contentWrapper .innerWrapper .button {
+  width: 300px;
+  position: relative;
+  z-index: 1;
+}
+header .contentWrapper .innerWrapper #hamburger {
+  display: inline-block;
+  vertical-align: top;
+  background: #b69860;
+  height: 65px;
+  width: 65px;
+  position: relative;
+  z-index: 1;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+header .contentWrapper .innerWrapper #hamburger .bars {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 1px;
+  height: 18px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  width: 25px;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+header .contentWrapper .innerWrapper #hamburger .bars .bar {
+  height: 2px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  display: block;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+header .contentWrapper .innerWrapper #hamburger .bars .bar:nth-child(2) {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+header .contentWrapper .innerWrapper #hamburger .bars .bar:nth-child(3) {
+  bottom: 0;
+  top: auto;
+}
+header .contentWrapper .innerWrapper .socialsWrapper {
+  height: 100%;
+  left: auto;
+  position: absolute;
+  top: 65px;
+  width: 65px;
+  right: -65px;
+  -webkit-transition: right 0.45s 1.2s ease-out;
+  -moz-transition: right 0.45s 1.2s ease-out;
+  -o-transition: right 0.45s 1.2s ease-out;
+  transition: right 0.45s 1.2s ease-out;
+  z-index: 1;
+}
+header .contentWrapper .innerWrapper .socialsWrapper .innerSocialsWrapper {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  white-space: nowrap;
+  margin-top: 23px;
+  text-align: left;
+}
+header .contentWrapper .innerWrapper .socialsWrapper .innerSocialsWrapper .label {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 50px;
+  margin-right: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 3.5px;
+}
+header .contentWrapper .innerWrapper .socialsWrapper .innerSocialsWrapper .links {
+  display: inline-block;
+  vertical-align: middle;
+}
+header .contentWrapper .innerWrapper .socialsWrapper .innerSocialsWrapper .links a {
+  color: #b69860;
+  margin-right: 10px;
+  font-size: 18px;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+header .contentWrapper .innerWrapper .socialsWrapper .innerSocialsWrapper .links a:hover {
+  color: #fff;
+}
+header .contentWrapper .innerWrapper .socialsWrapper .innerSocialsWrapper .links a:last-child {
+  margin-right: 0;
+}
+header .contentWrapper .innerWrapper .bigMenu {
+  height: auto;
+  left: auto;
+  position: absolute;
+  top: -650px;
+  width: 365px;
+  right: 0;
+  background: #b69860;
+  text-align: left;
+  padding: 50px 65px 0 30px;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+header .contentWrapper .innerWrapper .bigMenu:before {
+  content: "";
+  height: 260px;
+  left: 53px;
+  position: absolute;
+  top: auto;
+  width: 260px;
+  bottom: -130px;
+  z-index: -1;
+  background: #b69860;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+header .contentWrapper .innerWrapper .bigMenu .link {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #000;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+header .contentWrapper .innerWrapper .bigMenu .link:hover {
+  color: #fff;
+}
+header .contentWrapper .innerWrapper .bigMenu .link:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+header .contentWrapper .innerWrapper .bigMenu .link i {
+  margin-right: 20px;
+  font-size: 22px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: -2px;
+}
+header .contentWrapper .innerWrapper .bigMenu .icon {
+  height: auto;
+  left: 50%;
+  position: absolute;
+  top: auto;
+  width: 50px;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  bottom: -100px;
+}
+header .contentWrapper .innerWrapper .bigMenu .icon svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+header .contentWrapper .innerWrapper .bigMenu .icon svg path {
+  fill: #000;
+}
+@media all and (max-width: 767px) {
+  header.open .contentWrapper .innerWrapper .bigMenu:after {
+    opacity: 0.6;
+    visibility: visible;
+    pointer-events: all;
+  }
+  header .contentWrapper .innerWrapper .socialsWrapper {
+    display: none;
+  }
+  header .contentWrapper .innerWrapper .bigMenu {
+    padding: 50px 20px 0 20px;
+  }
+  header .contentWrapper .innerWrapper .bigMenu:after {
+    content: "";
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #000;
+    z-index: -1;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+  }
+  header .contentWrapper .innerWrapper .bigMenu:before {
+    z-index: 0;
+  }
+  header .contentWrapper .innerWrapper .bigMenu .link {
+    position: relative;
+  }
+}
+@media all and (max-width: 500px) {
+  header .contentWrapper .innerWrapper .button {
+    width: calc(100% - 65px);
+    line-height: 23px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  header .contentWrapper .innerWrapper .bigMenu {
+    width: 100%;
+  }
+  header .contentWrapper .innerWrapper .bigMenu:before {
+    height: 660px;
+    width: 660px;
+    left: 50%;
+    -webkit-transform: translateX(-50%) rotate(45deg);
+    -moz-transform: translateX(-50%) rotate(45deg);
+    -o-transform: translateX(-50%) rotate(45deg);
+    -ms-transform: translateX(-50%) rotate(45deg);
+    transform: translateX(-50%) rotate(45deg);
+    bottom: -110px;
+  }
+}
+/*# sourceMappingURL=header.css.map */
