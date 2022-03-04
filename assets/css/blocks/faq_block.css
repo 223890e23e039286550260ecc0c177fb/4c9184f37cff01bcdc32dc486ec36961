@@ -1,5 +1,5 @@
 .faqBlock {
-  margin-top: 200px;
+  margin: 200px 0;
   position: relative;
   z-index: 1;
   background: #383734;
@@ -205,7 +205,7 @@
 }
 @media all and (max-width: 767px) {
   .faqBlock {
-    margin-top: 100px;
+    margin: 100px 0;
   }
   .faqBlock .cols .col .questions {
     width: calc(100% + 40px);

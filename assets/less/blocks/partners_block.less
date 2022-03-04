@@ -1,0 +1,95 @@
+@import "../bootstrap.less";
+@import "../constants.less";
+
+.partnersBlock{
+    .intro{
+        position:relative;
+        &.is-inview{
+            .contentWrapper{
+                .bigTitle{
+                    .transform(translateY(0));
+                    visibility:visible;
+                    opacity:1;
+                }
+            }
+        }
+        .contentWrapper{
+            position:relative;
+            text-align:center;
+            .bigTitle{
+                display:block;
+                .transform(translateY(@paddingBig));
+                visibility:hidden;
+                opacity:0;
+                .multipleTransitions(transform .45s .3s, opacity .45s .3s);
+            }
+        }
+    }
+    .sliderWrapper{
+        width:100%;
+        position:relative;
+        z-index:1;
+        max-width: 3000px;
+        margin: 0 auto;
+        margin-bottom:@paddingBig * 2;
+        margin-top:@paddingBig;
+        .transform(translateY(@paddingBig));
+        visibility:hidden;
+        opacity:0;
+        .multipleTransitions(transform .45s .3s, opacity .45s .3s);
+        &.is-inview{
+            .transform(translateY(0));
+            visibility:visible;
+            opacity:1;
+        }
+        .slider{
+            cursor:grab; 
+            width: max-content;  
+            opacity:0;
+            .transitionMore(opacity, .6s, .6s);
+            &.loaded{
+                opacity:1;
+            }
+            .slide{
+                display:inline-block;
+                vertical-align:middle;
+                width:350px;
+                position:relative;
+                margin:0 @paddingBig * 1.5;
+                padding:@paddingBig 0;
+                white-space:normal;
+                .imageWrapper{
+                    width:100%;
+                    a{
+                        display:block;
+                        opacity:1;
+                        .transition(.3s);
+                        &:hover{
+                            opacity:0.6;
+                        }
+                    }
+                    img{
+                        display:block;
+                        max-width:100%;
+                        max-height:100px;
+                        pointer-events:none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 767px){
+    .partnersBlock{
+        .sliderWrapper{
+            margin:0;
+            .slider{
+                .slide{
+                    width:200px;
+                    margin:0 @paddingBig;
+                }
+            }
+        }
+    }
+}
