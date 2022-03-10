@@ -316,6 +316,27 @@ b {
 .icon-vimeo:before {
   content: "\e909";
 }
+.focusButton {
+  height: auto;
+  left: auto;
+  position: fixed;
+  top: auto;
+  width: auto;
+  right: -400px;
+  bottom: -1px;
+  z-index: 9;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  -webkit-transition: right 0.45s 0.6s ease-out;
+  -moz-transition: right 0.45s 0.6s ease-out;
+  -o-transition: right 0.45s 0.6s ease-out;
+  transition: right 0.45s 0.6s ease-out;
+}
+.focusButton.active {
+  right: 0;
+}
+.focusButton.hidden {
+  right: -400px;
+}
 header {
   height: 65px;
   left: 0;
@@ -635,6 +656,14 @@ header .contentWrapper .innerWrapper .bigMenu .icon svg path {
     -ms-transform: translateX(-50%) rotate(45deg);
     transform: translateX(-50%) rotate(45deg);
     bottom: -110px;
+  }
+}
+@media all and (max-width: 400px) {
+  .focusButton {
+    width: 100%;
+  }
+  .focusButton .button {
+    width: 100%;
   }
 }
 footer .textItem {

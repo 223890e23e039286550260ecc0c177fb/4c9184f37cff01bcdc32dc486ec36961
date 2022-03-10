@@ -1,6 +1,21 @@
 @import "../bootstrap.less";
 @import "../constants.less";
 
+.focusButton{
+    .fixed(auto, auto, auto, auto);
+    right:-400px;
+    bottom:-1px;
+    z-index:9;
+    border:1px solid rgba(255,255,255,0.1);
+    .transitionMore(right, .45s, .6s);
+    &.active{
+        right:0;
+    }
+    &.hidden{
+        right:-400px;
+    }
+}
+
 header{
     .fixed(65px, 100%, -65px, 0);
     z-index:10;
@@ -268,6 +283,15 @@ header{
                     }
                 }
             }
+        }
+    }
+}
+
+@media all and (max-width: 400px){
+    .focusButton{
+        width:100%;
+        .button{
+            width:100%;
         }
     }
 }

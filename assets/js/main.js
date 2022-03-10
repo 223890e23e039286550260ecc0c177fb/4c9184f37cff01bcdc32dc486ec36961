@@ -4,6 +4,7 @@ var scrollerHeight = 0;
 $(document).ready(function() {
     
     $("header").addClass("active");
+    $(".focusButton").addClass("active");
     initDefaultPage();
     
     setInterval(function(){
@@ -102,6 +103,11 @@ function initDefaultPage(){
             $("header").removeClass("scrolled");
         }
         $(".customSelect").select2("close");
+        if(currentScrollY === $(".pageContainer").height() - $(window).height()){
+            $(".focusButton").addClass("hidden");
+        } else {
+            $(".focusButton").removeClass("hidden");
+        }
     });
     scroller.stop();
     
