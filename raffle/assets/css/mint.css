@@ -1210,7 +1210,7 @@ footer .bottomFooter {
 }
 @media all and (max-width: 430px) {
   .mintBlock .firstContainer .lion {
-    bottom: 50px;
+    bottom: 80px;
   }
 }
 @media all and (max-width: 345px) {
@@ -1219,7 +1219,7 @@ footer .bottomFooter {
   }
   .mintBlock .firstContainer .lion {
     right: -180px;
-    bottom: 20px;
+    bottom: 50px;
   }
 }
 /*# sourceMappingURL=mint.css.map */
