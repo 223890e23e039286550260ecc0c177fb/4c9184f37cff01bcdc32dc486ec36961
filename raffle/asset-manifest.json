@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/raffle/static/css/main.76f01790.chunk.css",
+    "main.js": "/raffle/static/js/main.40580a2d.chunk.js",
+    "runtime-main.js": "/raffle/static/js/runtime-main.38b3b76a.js",
+    "static/js/2.13c5c1c7.chunk.js": "/raffle/static/js/2.13c5c1c7.chunk.js",
+    "static/js/3.0e65da3d.chunk.js": "/raffle/static/js/3.0e65da3d.chunk.js",
+    "index.html": "/raffle/index.html",
+    "static/js/2.13c5c1c7.chunk.js.LICENSE.txt": "/raffle/static/js/2.13c5c1c7.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.38b3b76a.js",
+    "static/js/2.13c5c1c7.chunk.js",
+    "static/css/main.76f01790.chunk.css",
+    "static/js/main.40580a2d.chunk.js"
+  ]
+}
