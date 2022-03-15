@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/styles/widget.css"],"names":[],"mappings":"AAAA,MACE,YAAa,CACb,YAAa,CACb,kBACF","file":"main.1db30f93.chunk.css","sourcesContent":["#root {\n  padding: 60px;\n  display: flex;\n  align-items: center;\n}\n"]}

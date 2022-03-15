@@ -1,0 +1,325 @@
+.roadmapBlock {
+  margin: 200px 0;
+  position: relative;
+  z-index: 1;
+}
+.roadmapBlock.is-inview .intro {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -o-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  visibility: visible;
+  opacity: 1;
+}
+.roadmapBlock.is-inview .roadmap .background {
+  opacity: 0.2;
+}
+.roadmapBlock .intro {
+  text-align: center;
+  position: relative;
+  -webkit-transform: translateY(50px);
+  -moz-transform: translateY(50px);
+  -o-transform: translateY(50px);
+  -ms-transform: translateY(50px);
+  transform: translateY(50px);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: transform 0.45s 0.3s, opacity 0.45s 0.3s;
+  -moz-transition: transform 0.45s 0.3s, opacity 0.45s 0.3s;
+  -ms-transition: transform 0.45s 0.3s, opacity 0.45s 0.3s;
+  -o-transition: transform 0.45s 0.3s, opacity 0.45s 0.3s;
+  transition: transform 0.45s 0.3s, opacity 0.45s 0.3s;
+}
+.roadmapBlock .intro .bigTitleWrapper {
+  height: auto;
+  left: 50%;
+  position: absolute;
+  top: auto;
+  width: auto;
+  bottom: 0;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.roadmapBlock .intro .bigTitleWrapper .bigTitle {
+  color: #b69860;
+  display: inline-block;
+}
+.roadmapBlock .intro .right {
+  margin-left: calc(100% - 450px);
+  text-align: right;
+  width: 450px;
+  position: relative;
+  z-index: 1;
+}
+.roadmapBlock .intro .right .normalTitle {
+  color: #b69860;
+}
+.roadmapBlock .intro .right .buttons {
+  margin-top: 20px;
+}
+.roadmapBlock .roadmap {
+  position: relative;
+}
+.roadmapBlock .roadmap .background {
+  height: 1200px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: 0;
+  -webkit-transition: transform 0.9s 0.6s, opacity 0.9s 0.6s;
+  -moz-transition: transform 0.9s 0.6s, opacity 0.9s 0.6s;
+  -ms-transition: transform 0.9s 0.6s, opacity 0.9s 0.6s;
+  -o-transition: transform 0.9s 0.6s, opacity 0.9s 0.6s;
+  transition: transform 0.9s 0.6s, opacity 0.9s 0.6s;
+}
+.roadmapBlock .roadmap .background:after {
+  content: "";
+  height: 300px;
+  left: 0;
+  position: absolute;
+  top: auto;
+  width: 100%;
+  bottom: -1px;
+  background: #000;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #000), color-stop(1, rgba(0, 0, 0, 0)));
+  background: -ms-linear-gradient(bottom, #000, rgba(0, 0, 0, 0));
+  background: -moz-linear-gradient(center bottom, #000 0%, rgba(0, 0, 0, 0) 100%);
+  background: -o-linear-gradient(rgba(0, 0, 0, 0), #000);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(0, 0, 0, 0)', endColorstr='#000', GradientType=0);
+}
+.roadmapBlock .roadmap .innerContent {
+  padding-top: 100px;
+}
+.roadmapBlock .roadmap .innerContent .innerContainer {
+  position: relative;
+  min-height: 1200px;
+  padding-top: 50px;
+}
+.roadmapBlock .roadmap .innerContent .innerContainer .centerLine {
+  height: 100%;
+  left: 50%;
+  position: absolute;
+  top: 50px;
+  width: 1px;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background: #b69860;
+  z-index: 1;
+}
+.roadmapBlock .roadmap .innerContent .innerContainer .centerLine .stickyIcon {
+  height: auto;
+  left: 50%;
+  position: absolute;
+  top: 0;
+  width: 50px;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.roadmapBlock .roadmap .innerContent .innerContainer .centerLine .stickyIcon svg {
+  height: auto;
+  width: 100%;
+  display: block;
+}
+.roadmapBlock .roadmap .innerContent .innerContainer .centerLine .stickyIcon svg .primary {
+  fill: #b69860;
+}
+.roadmapBlock .roadmap .innerContent .innerContainer .item {
+  text-align: left;
+  width: 50%;
+  -webkit-transform: translateY(50px);
+  -moz-transform: translateY(50px);
+  -o-transform: translateY(50px);
+  -ms-transform: translateY(50px);
+  transform: translateY(50px);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: transform 0.45s 0.3s, opacity 0.45s 0.3s;
+  -moz-transition: transform 0.45s 0.3s, opacity 0.45s 0.3s;
+  -ms-transition: transform 0.45s 0.3s, opacity 0.45s 0.3s;
+  -o-transition: transform 0.45s 0.3s, opacity 0.45s 0.3s;
+  transition: transform 0.45s 0.3s, opacity 0.45s 0.3s;
+}
+.roadmapBlock .roadmap .innerContent .innerContainer .item.is-inview {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -o-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  visibility: visible;
+  opacity: 1;
+}
+.roadmapBlock .roadmap .innerContent .innerContainer .item.is-inview .itemIntro .dividerWrapper .divider {
+  width: 100%;
+  opacity: 1;
+}
+.roadmapBlock .roadmap .innerContent .innerContainer .item.right {
+  margin-left: 50%;
+}
+.roadmapBlock .roadmap .innerContent .innerContainer .item.right .itemIntro .bigTitle {
+  padding-left: 50px;
+  width: 150px;
+}
+.roadmapBlock .roadmap .innerContent .innerContainer .item.right .itemIntro .normalTitle {
+  width: calc(100% - 150px);
+  padding-right: 0;
+}
+.roadmapBlock .roadmap .innerContent .innerContainer .item.right .itemIntro .dividerWrapper {
+  text-align: left;
+}
+.roadmapBlock .roadmap .innerContent .innerContainer .item.right .itemContent {
+  padding-right: 0;
+  padding-left: 150px;
+}
+.roadmapBlock .roadmap .innerContent .innerContainer .item .itemIntro .bigTitle {
+  display: inline-block;
+  vertical-align: top;
+  width: 100px;
+}
+.roadmapBlock .roadmap .innerContent .innerContainer .item .itemIntro .normalTitle {
+  display: inline-block;
+  vertical-align: top;
+  width: calc(100% - 100px);
+  margin-top: 5px;
+  padding-right: 50px;
+}
+.roadmapBlock .roadmap .innerContent .innerContainer .item .itemIntro .dividerWrapper {
+  text-align: right;
+}
+.roadmapBlock .roadmap .innerContent .innerContainer .item .itemIntro .dividerWrapper .divider {
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 1px;
+  width: 0;
+  opacity: 0;
+  background: #b69860;
+  -webkit-transition: width 0.9s 0.3s, opacity 0.9s 0.3s;
+  -moz-transition: width 0.9s 0.3s, opacity 0.9s 0.3s;
+  -ms-transition: width 0.9s 0.3s, opacity 0.9s 0.3s;
+  -o-transition: width 0.9s 0.3s, opacity 0.9s 0.3s;
+  transition: width 0.9s 0.3s, opacity 0.9s 0.3s;
+}
+.roadmapBlock .roadmap .innerContent .innerContainer .item .itemContent {
+  padding-left: 100px;
+  padding-right: 50px;
+}
+@media all and (max-width: 1400px) {
+  .roadmapBlock .intro .right {
+    width: 350px;
+    margin-left: calc(100% - 350px);
+  }
+}
+@media all and (max-width: 1180px) {
+  .roadmapBlock .intro .right {
+    width: 250px;
+    margin-left: calc(100% - 250px);
+  }
+}
+@media all and (max-width: 1024px) {
+  .roadmapBlock .intro {
+    margin-bottom: -30px;
+    position: relative;
+    z-index: 1;
+  }
+  .roadmapBlock .intro .right {
+    width: 350px;
+    float: none;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    -webkit-transform: none !important;
+    -moz-transform: none !important;
+    -o-transform: none !important;
+    -ms-transform: none !important;
+    transform: none !important;
+  }
+  .roadmapBlock .intro .bigTitleWrapper {
+    position: relative;
+  }
+  .roadmapBlock .intro .bigTitleWrapper .bigTitle {
+    -webkit-transform: none !important;
+    -moz-transform: none !important;
+    -o-transform: none !important;
+    -ms-transform: none !important;
+    transform: none !important;
+  }
+  .roadmapBlock .roadmap .innerContent .innerContainer .item.right .itemContent {
+    padding-left: 50px;
+  }
+  .roadmapBlock .roadmap .innerContent .innerContainer .item .itemContent {
+    padding-left: 0;
+  }
+}
+@media all and (max-width: 767px) {
+  .roadmapBlock .intro {
+    margin-bottom: -20px;
+  }
+  .roadmapBlock .intro .right {
+    max-width: 100%;
+  }
+  .roadmapBlock .roadmap .innerContent .innerContainer {
+    padding-left: 20px;
+  }
+  .roadmapBlock .roadmap .innerContent .innerContainer .centerLine {
+    -webkit-transform: none;
+    -moz-transform: none;
+    -o-transform: none;
+    -ms-transform: none;
+    transform: none;
+    left: 0;
+  }
+  .roadmapBlock .roadmap .innerContent .innerContainer .centerLine .stickyIcon {
+    display: none;
+  }
+  .roadmapBlock .roadmap .innerContent .innerContainer .item {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .roadmapBlock .roadmap .innerContent .innerContainer .item:last-child {
+    margin-bottom: 0;
+  }
+  .roadmapBlock .roadmap .innerContent .innerContainer .item.right {
+    margin-left: 0;
+  }
+  .roadmapBlock .roadmap .innerContent .innerContainer .item .itemIntro .bigTitle {
+    display: block;
+    width: 100%;
+    padding-left: 0 !important;
+    margin-bottom: 10px;
+  }
+  .roadmapBlock .roadmap .innerContent .innerContainer .item .itemIntro .bigTitle strong {
+    color: #b69860;
+  }
+  .roadmapBlock .roadmap .innerContent .innerContainer .item .itemIntro .normalTitle {
+    width: 100% !important;
+    padding-right: 0;
+  }
+  .roadmapBlock .roadmap .innerContent .innerContainer .item .itemIntro .dividerWrapper {
+    margin-left: -20px;
+    width: calc(100% + 20px);
+    text-align: left;
+  }
+  .roadmapBlock .roadmap .innerContent .innerContainer .item .itemContent {
+    padding: 0 !important;
+  }
+}
+@media all and (max-width: 400px) {
+  .roadmapBlock .intro {
+    margin-bottom: -17px;
+  }
+}
+/*# sourceMappingURL=roadmap_block.css.map */

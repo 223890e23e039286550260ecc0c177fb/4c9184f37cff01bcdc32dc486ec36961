@@ -1,0 +1,581 @@
+.headerBigBlock {
+  position: relative;
+}
+.headerBigBlock.is-inview .firstContainer .background {
+  opacity: 1;
+}
+.headerBigBlock.is-inview .firstContainer .lion {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -o-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+}
+.headerBigBlock.is-inview .firstContainer .innerContent .logo,
+.headerBigBlock.is-inview .firstContainer .innerContent .bigTitle,
+.headerBigBlock.is-inview .firstContainer .innerContent .buttons {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -o-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+}
+.headerBigBlock.is-inview .secondContainer .infoBlock {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -o-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+}
+.headerBigBlock .firstContainer {
+  height: 100vh;
+  min-height: 970px;
+  max-height: 1400px;
+}
+.headerBigBlock .firstContainer .contentWrapper {
+  position: relative;
+  height: 100%;
+}
+.headerBigBlock .firstContainer .contentWrapper .innerWrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.headerBigBlock .firstContainer .background {
+  height: 100%;
+  left: -200px;
+  position: absolute;
+  top: 0;
+  width: calc(100% + 400px);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: 0;
+  -webkit-transition: opacity 1.8s 0.3s ease-out;
+  -moz-transition: opacity 1.8s 0.3s ease-out;
+  -o-transition: opacity 1.8s 0.3s ease-out;
+  transition: opacity 1.8s 0.3s ease-out;
+}
+.headerBigBlock .firstContainer .background:after {
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: #000;
+  opacity: 0.7;
+}
+.headerBigBlock .firstContainer .background:before {
+  content: "";
+  height: 300px;
+  left: 0;
+  position: absolute;
+  top: auto;
+  width: 100%;
+  bottom: -1px;
+  background: #000;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #000), color-stop(1, rgba(0, 0, 0, 0)));
+  background: -ms-linear-gradient(bottom, #000, rgba(0, 0, 0, 0));
+  background: -moz-linear-gradient(center bottom, #000 0%, rgba(0, 0, 0, 0) 100%);
+  background: -o-linear-gradient(rgba(0, 0, 0, 0), #000);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(0, 0, 0, 0)', endColorstr='#000', GradientType=0);
+  z-index: 1;
+}
+.headerBigBlock .firstContainer .background .icon {
+  height: auto;
+  left: auto;
+  position: absolute;
+  top: -200px;
+  width: 750px;
+  right: 0;
+  opacity: 0.8;
+}
+.headerBigBlock .firstContainer .background .icon svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.headerBigBlock .firstContainer .background .icon svg path {
+  fill: #b69860;
+}
+.headerBigBlock .firstContainer .background .gradient {
+  height: 100%;
+  left: -1px;
+  position: absolute;
+  top: 0;
+  width: 400px;
+  background: #000;
+  background: -webkit-gradient(linear, left top, right top, color-stop(0, #000), color-stop(1, rgba(0, 0, 0, 0)));
+  background: -ms-linear-gradient(left, #000, rgba(0, 0, 0, 0));
+  background: -moz-linear-gradient(left, #000 0%, rgba(0, 0, 0, 0) 100%);
+  background: -o-linear-gradient(rgba(0, 0, 0, 0), #000);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(0, 0, 0, 0)', endColorstr='#000', GradientType=0);
+}
+.headerBigBlock .firstContainer .background .gradient.right {
+  right: -1px;
+  left: auto;
+  background: #000;
+  background: -webkit-gradient(linear, left top, right top, color-stop(0, rgba(0, 0, 0, 0)), color-stop(1, #000));
+  background: -ms-linear-gradient(left, rgba(0, 0, 0, 0), #000);
+  background: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, #000 100%);
+  background: -o-linear-gradient(#000, rgba(0, 0, 0, 0));
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000', endColorstr='rgba(0, 0, 0, 0)', GradientType=0);
+}
+.headerBigBlock .firstContainer .lion {
+  height: auto;
+  left: auto;
+  position: absolute;
+  top: auto;
+  width: 75%;
+  right: -100px;
+  bottom: -35%;
+  -webkit-transform: translateY(50px);
+  -moz-transform: translateY(50px);
+  -o-transform: translateY(50px);
+  -ms-transform: translateY(50px);
+  transform: translateY(50px);
+  opacity: 0;
+  -webkit-transition: transform 0.45s 1.2s, opacity 0.45s 1.2s;
+  -moz-transition: transform 0.45s 1.2s, opacity 0.45s 1.2s;
+  -ms-transition: transform 0.45s 1.2s, opacity 0.45s 1.2s;
+  -o-transition: transform 0.45s 1.2s, opacity 0.45s 1.2s;
+  transition: transform 0.45s 1.2s, opacity 0.45s 1.2s;
+}
+.headerBigBlock .firstContainer .lion .innerLion {
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.headerBigBlock .firstContainer .lion .innerLion:after {
+  content: "";
+  height: 60%;
+  left: 0;
+  position: absolute;
+  top: auto;
+  width: 100%;
+  bottom: -1px;
+  background: #000;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #000), color-stop(1, rgba(0, 0, 0, 0)));
+  background: -ms-linear-gradient(bottom, #000, rgba(0, 0, 0, 0));
+  background: -moz-linear-gradient(center bottom, #000 0%, rgba(0, 0, 0, 0) 100%);
+  background: -o-linear-gradient(rgba(0, 0, 0, 0), #000);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(0, 0, 0, 0)', endColorstr='#000', GradientType=0);
+}
+.headerBigBlock .firstContainer .innerContent {
+  height: auto;
+  left: 0;
+  position: absolute;
+  top: 40px;
+  width: 100%;
+  color: #fff;
+}
+.headerBigBlock .firstContainer .innerContent .logo {
+  width: 700px;
+  max-width: 100%;
+  margin-bottom: 110px;
+  -webkit-transform: translateY(50px);
+  -moz-transform: translateY(50px);
+  -o-transform: translateY(50px);
+  -ms-transform: translateY(50px);
+  transform: translateY(50px);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: transform 0.45s 0.6s, opacity 0.45s 0.6s;
+  -moz-transition: transform 0.45s 0.6s, opacity 0.45s 0.6s;
+  -ms-transition: transform 0.45s 0.6s, opacity 0.45s 0.6s;
+  -o-transition: transform 0.45s 0.6s, opacity 0.45s 0.6s;
+  transition: transform 0.45s 0.6s, opacity 0.45s 0.6s;
+}
+.headerBigBlock .firstContainer .innerContent .logo svg {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+.headerBigBlock .firstContainer .innerContent .logo svg path,
+.headerBigBlock .firstContainer .innerContent .logo svg rect,
+.headerBigBlock .firstContainer .innerContent .logo svg polygon {
+  fill: #b69860;
+}
+.headerBigBlock .firstContainer .innerContent .bigTitle {
+  display: block;
+  -webkit-transform: translateY(50px);
+  -moz-transform: translateY(50px);
+  -o-transform: translateY(50px);
+  -ms-transform: translateY(50px);
+  transform: translateY(50px);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: transform 0.45s 0.65s, opacity 0.45s 0.65s;
+  -moz-transition: transform 0.45s 0.65s, opacity 0.45s 0.65s;
+  -ms-transition: transform 0.45s 0.65s, opacity 0.45s 0.65s;
+  -o-transition: transform 0.45s 0.65s, opacity 0.45s 0.65s;
+  transition: transform 0.45s 0.65s, opacity 0.45s 0.65s;
+}
+.headerBigBlock .firstContainer .innerContent .buttons {
+  margin-top: 50px;
+  -webkit-transform: translateY(50px);
+  -moz-transform: translateY(50px);
+  -o-transform: translateY(50px);
+  -ms-transform: translateY(50px);
+  transform: translateY(50px);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: transform 0.45s 0.7s, opacity 0.45s 0.7s;
+  -moz-transition: transform 0.45s 0.7s, opacity 0.45s 0.7s;
+  -ms-transition: transform 0.45s 0.7s, opacity 0.45s 0.7s;
+  -o-transition: transform 0.45s 0.7s, opacity 0.45s 0.7s;
+  transition: transform 0.45s 0.7s, opacity 0.45s 0.7s;
+}
+.headerBigBlock .secondContainer {
+  position: relative;
+  z-index: 1;
+  margin-top: -200px;
+}
+.headerBigBlock .secondContainer .infoBlock {
+  width: 35%;
+  min-height: 300px;
+  background: #b69860;
+  padding: 100px 50px 200px 50px;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  -webkit-transform: translateY(50px);
+  -moz-transform: translateY(50px);
+  -o-transform: translateY(50px);
+  -ms-transform: translateY(50px);
+  transform: translateY(50px);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: transform 0.45s 0.9s, opacity 0.45s 0.9s;
+  -moz-transition: transform 0.45s 0.9s, opacity 0.45s 0.9s;
+  -ms-transition: transform 0.45s 0.9s, opacity 0.45s 0.9s;
+  -o-transition: transform 0.45s 0.9s, opacity 0.45s 0.9s;
+  transition: transform 0.45s 0.9s, opacity 0.45s 0.9s;
+}
+.headerBigBlock .secondContainer .infoBlock:after {
+  content: "";
+  height: 400px;
+  left: -65px;
+  position: absolute;
+  top: auto;
+  width: calc(100% + 65px);
+  bottom: -1px;
+  background: #000;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #000), color-stop(1, rgba(0, 0, 0, 0)));
+  background: -ms-linear-gradient(bottom, #000, rgba(0, 0, 0, 0));
+  background: -moz-linear-gradient(center bottom, #000 0%, rgba(0, 0, 0, 0) 100%);
+  background: -o-linear-gradient(rgba(0, 0, 0, 0), #000);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(0, 0, 0, 0)', endColorstr='#000', GradientType=0);
+}
+.headerBigBlock .secondContainer .infoBlock .normalTitle {
+  color: #000;
+  position: relative;
+  z-index: 1;
+}
+.headerBigBlock .secondContainer .infoBlock .text {
+  margin-top: 50px;
+  position: relative;
+  z-index: 1;
+}
+.headerBigBlock .secondContainer .infoBlock .scroller {
+  height: 100%;
+  left: -65px;
+  position: absolute;
+  top: 0;
+  width: 65px;
+  background: #383734;
+  overflow: hidden;
+  cursor: pointer;
+}
+.headerBigBlock .secondContainer .infoBlock .scroller:hover .innerScroll .icon {
+  opacity: 1 !important;
+}
+.headerBigBlock .secondContainer .infoBlock .scroller:hover .innerScroll .icon:nth-child(3) {
+  margin-left: 0;
+}
+.headerBigBlock .secondContainer .infoBlock .scroller:hover .innerScroll .icon:nth-child(4) {
+  margin-left: 0;
+}
+.headerBigBlock .secondContainer .infoBlock .scroller .innerScroll {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  white-space: nowrap;
+}
+.headerBigBlock .secondContainer .infoBlock .scroller .innerScroll .label {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 30px;
+  margin-right: 30px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 3.5px;
+  animation: scrollTextAnimation 4s infinite;
+  background-image: linear-gradient(to right, #fff, #fff 50%, #000 50%, #000);
+  background-size: 200% 100%;
+  background-position-x: 100%;
+  background-color: #000;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.headerBigBlock .secondContainer .infoBlock .scroller .innerScroll .icon {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 80px;
+  color: #000;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.headerBigBlock .secondContainer .infoBlock .scroller .innerScroll .icon:nth-child(3) {
+  opacity: 0.4;
+  margin-left: -10px;
+}
+.headerBigBlock .secondContainer .infoBlock .scroller .innerScroll .icon:nth-child(4) {
+  opacity: 0.2;
+  margin-left: -10px;
+}
+.headerBigBlock .secondContainer .sliderBlock {
+  width: 35%;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 200px;
+  background: #383734;
+  padding: 50px;
+}
+.headerBigBlock .secondContainer .sliderBlock .slider {
+  width: 100%;
+  padding-bottom: 100%;
+  position: relative;
+  border: 1px solid #b69860;
+}
+.headerBigBlock .secondContainer .sliderBlock .slider .backgroundSlider {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.headerBigBlock .secondContainer .sliderBlock .slider .backgroundSlider .slide {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.headerBigBlock .secondContainer .sliderBlock .normalTitle {
+  height: auto;
+  left: auto;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  pointer-events: none;
+  right: -200px;
+  z-index: 2;
+}
+.headerBigBlock .secondContainer .sliderBlock .normalTitle strong {
+  color: #b69860;
+}
+@keyframes scrollTextAnimation {
+  0% {
+    background-position-x: 100%;
+  }
+  25% {
+    background-position-x: 0;
+  }
+  50% {
+    background-position-x: 0;
+  }
+  75% {
+    background-position-x: -100%;
+  }
+  100% {
+    background-position-x: -100%;
+  }
+}
+@media all and (max-height: 1030px) {
+  .headerBigBlock .firstContainer {
+    min-height: 810px;
+    max-height: inherit;
+  }
+  .headerBigBlock .firstContainer .innerContent .logo {
+    width: 400px;
+    margin-bottom: 50px;
+  }
+  .headerBigBlock .firstContainer .innerContent .logo svg {
+    display: block;
+    height: auto;
+    width: 100%;
+  }
+  .headerBigBlock .firstContainer .innerContent .logo svg path,
+  .headerBigBlock .firstContainer .innerContent .logo svg rect,
+  .headerBigBlock .firstContainer .innerContent .logo svg polygon {
+    fill: #b69860;
+  }
+  .headerBigBlock .firstContainer .innerContent .buttons {
+    margin-top: 50px;
+  }
+}
+@media all and (max-width: 1560px) {
+  .headerBigBlock .firstContainer .lion {
+    bottom: -25%;
+  }
+  .headerBigBlock .secondContainer .infoBlock {
+    width: 42%;
+  }
+  .headerBigBlock .secondContainer .sliderBlock {
+    width: 42%;
+  }
+}
+@media all and (max-width: 1430px) {
+  .headerBigBlock .firstContainer .background .gradient {
+    width: 300px;
+  }
+  .headerBigBlock .firstContainer .lion {
+    bottom: -15%;
+  }
+}
+@media all and (max-width: 1200px) {
+  .headerBigBlock .secondContainer .sliderBlock .normalTitle {
+    right: -150px;
+  }
+}
+@media all and (max-width: 1024px) {
+  .headerBigBlock .firstContainer .backgroundWrapper .background .icon {
+    display: none;
+  }
+  .headerBigBlock .secondContainer .infoBlock {
+    width: 50%;
+  }
+  .headerBigBlock .secondContainer .sliderBlock {
+    width: 50%;
+  }
+  .headerBigBlock .secondContainer .sliderBlock .normalTitle {
+    top: -70px;
+    right: auto;
+    left: 50px;
+  }
+  .headerBigBlock .secondContainer .sliderBlock .normalTitle .innerTitle {
+    -webkit-transform: none !important;
+    -moz-transform: none !important;
+    -o-transform: none !important;
+    -ms-transform: none !important;
+    transform: none !important;
+  }
+}
+@media all and (max-width: 900px) {
+  .headerBigBlock .secondContainer .infoBlock {
+    padding: 50px 20px 100px 20px;
+  }
+  .headerBigBlock .secondContainer .sliderBlock {
+    padding: 20px 20px 50px 20px;
+  }
+  .headerBigBlock .secondContainer .sliderBlock .normalTitle {
+    top: -70px;
+    left: 20px;
+  }
+}
+@media all and (max-width: 767px) {
+  .headerBigBlock .firstContainer {
+    position: relative;
+    height: auto;
+    min-height: 0;
+  }
+  .headerBigBlock .firstContainer .backgroundWrapper {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  .headerBigBlock .firstContainer .backgroundWrapper .lion {
+    right: -40px;
+  }
+  .headerBigBlock .firstContainer .innerContent {
+    position: relative;
+    padding-bottom: 200px;
+  }
+  .headerBigBlock .secondContainer {
+    margin-top: 0;
+  }
+  .headerBigBlock .secondContainer .infoBlock {
+    padding-left: 20px;
+    margin-left: 30px;
+    width: calc(100% - 30px);
+  }
+  .headerBigBlock .secondContainer .infoBlock:after {
+    height: 200px;
+  }
+  .headerBigBlock .secondContainer .infoBlock .scroller {
+    width: 50px;
+    left: -50px;
+  }
+  .headerBigBlock .secondContainer .sliderBlock {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .headerBigBlock .secondContainer .sliderBlock .normalTitle {
+    position: relative;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -o-transform: none;
+    -ms-transform: none;
+    transform: none;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin-bottom: 20px;
+  }
+}
+@media all and (max-width: 500px) {
+  .headerBigBlock .firstContainer {
+    position: relative;
+    height: auto;
+    min-height: 0;
+  }
+  .headerBigBlock .firstContainer .backgroundWrapper .lion {
+    width: 100%;
+    right: 0;
+    bottom: -5%;
+  }
+  .headerBigBlock .firstContainer .innerContent {
+    position: relative;
+    padding-bottom: 110%;
+    top: 95px;
+  }
+  .headerBigBlock .firstContainer .innerContent .logo {
+    margin-bottom: 30px;
+  }
+  .headerBigBlock .firstContainer .innerContent .bigTitle br {
+    display: none;
+  }
+  .headerBigBlock .firstContainer .innerContent .buttons {
+    margin-top: 30px;
+  }
+  .headerBigBlock .secondContainer .infoBlock .scroller {
+    top: -50px;
+  }
+}
+/*# sourceMappingURL=header_big_block.css.map */
